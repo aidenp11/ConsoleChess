@@ -3,3 +3,12 @@
 .vs/ConsoleChess/FileContentIndex/ca5d8ad6-c7fd-4e54-a202-8657fecaeda6.vsidx
 .vs/ConsoleChess/FileContentIndex/dcbc482f-02c8-4755-992d-5034c9584f58.vsidx
 .vs/ConsoleChess/v17/TestStore/0/004.testlog
+*.vsidx
+*.cs
+*.cache
+obj/Debug/net7.0/ConsoleChess.AssemblyInfoInputs.cache
+obj/Debug/net7.0/ConsoleChess.AssemblyInfo.cs
+.vs/ConsoleChess/v17/TestStore/0/testlog.manifest
+obj/Debug/net7.0/ConsoleChess.AssemblyInfoInputs.cache
+obj/Debug/net7.0/ConsoleChess.AssemblyInfo.cs
+.vs/ConsoleChess/v17/TestStore/0/testlog.manifest
