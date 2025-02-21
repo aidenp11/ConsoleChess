@@ -1,74 +1,127 @@
 using System;
 using ConsoleChess.Abstraction;
 
-class Game {
+class Game
+{
 
-    private Board board;
-    private bool useDebug;
-    private bool logMoves;
-    
-
-    public static void Main(string[] args) {
-
-        // TODO: Add support for multiple flags
-        bool start = true;
-        bool useColor = false;
-        bool shouldLog = false;
-        bool useUnicode = true;
-        // Assume we're not running in debug if it's not specified
-        if (args.Length == 0) {
-            useColor = false;
-        } else if (args[0] == "--no-color" || args[0] == "-nc") {
-            useColor = true;
-        } else if (args[0] == "--no-unicode" || args[0] == "-nu") {
-            useUnicode = false;
-        } else if (args[0] == "--help" || args[0] == "-h") {
-            Console.WriteLine("Usage: dotnet run [ -nc --no-color | -nu --no-unicode | -h --help | -cn --chess-notation | -l --log] [-l --log]");
-            Environment.Exit(0);
-        } else if (args[0] == "--chess-notation" || args[0] == "-cn") {
-            // Print the contents of `Chess-Notation.txt
-            Console.WriteLine(System.IO.File.ReadAllText("Chess-Notation.txt"));
-        } else if (args[0] != null && args.Length == 2) {
-            if (args[1] == "--log" || args[1] == "-l") {
-                shouldLog = true;
-                System.IO.File.Create("source/app/game.pgn");
-            }
-            else {
-                Console.WriteLine("Invalid argument. Use -h or --help for help.");
-                Environment.Exit(1);
-            }
-        } else if (args[0] == "--log" || args[0] == "-l") {
-            shouldLog = true;
-        } else {
-            Console.WriteLine("Invalid argument. Use -h or --help for help.");
-            Environment.Exit(1);
-        }
-
-        // Create a new board
-        Board board = new Board(useUnicode);
-
-        // Create a new game
-        Game game = new Game(board, useColor, shouldLog);
-        game.Start();
+	private Board board;
+	private bool useDebug;
+	private bool logMoves;
+	private bool firstTurn = true;
 
 
-    }
+	public static void Main(string[] args)
+	{
+		// TODO: Add support for multiple flags
+		bool useColor = false;
+		bool shouldLog = false;
+		bool useUnicode = true;
+		// Assume we're not running in debug if it's not specified
+		if (args.Length == 0)
+		{
+			useColor = false;
+		}
+		else if (args[0] == "--no-color" || args[0] == "-nc")
+		{
+			useColor = true;
+		}
+		else if (args[0] == "--no-unicode" || args[0] == "-nu")
+		{
+			useUnicode = false;
+		}
+		else if (args[0] == "--help" || args[0] == "-h")
+		{
+			Console.WriteLine("Usage: dotnet run [ -nc --no-color | -nu --no-unicode | -h --help | -cn --chess-notation | -l --log] [-l --log]");
+			Environment.Exit(0);
+		}
+		else if (args[0] == "--chess-notation" || args[0] == "-cn")
+		{
+			// Print the contents of `Chess-Notation.txt
+			Console.WriteLine(System.IO.File.ReadAllText("Chess-Notation.txt"));
+		}
+		else if (args[0] != null && args.Length == 2)
+		{
+			if (args[1] == "--log" || args[1] == "-l")
+			{
+				shouldLog = true;
+				System.IO.File.Create("source/app/game.pgn");
+			}
+			else
+			{
+				Console.WriteLine("Invalid argument. Use -h or --help for help.");
+				Environment.Exit(1);
+			}
+		}
+		else if (args[0] == "--log" || args[0] == "-l")
+		{
+			shouldLog = true;
+		}
+		else
+		{
+			Console.WriteLine("Invalid argument. Use -h or --help for help.");
+			Environment.Exit(1);
+		}
 
-    public Game(Board b, bool useDebug, bool logMoves) {
-        this.board = b;
-        this.useDebug = useDebug;
-        this.logMoves = logMoves;
-    }
+		// Create a new board
+		Board board = new Board(useUnicode);
 
-    public void Start() {
+		// Create a new game
+		Game game = new Game(board, useColor, shouldLog);
 
-        while (!this.board.gameOver) {
+		Console.WriteLine("Type 1 for normal Chess, Type 2 for Chess 960");
+		string choice = Console.ReadLine();
+		while (choice != "1" && choice != "2")
+		{
+			Console.WriteLine("Not valid option");
+			choice = Console.ReadLine();
+		}
+		if (choice == "1")
+		{
+			game.Start();
+		}
+		else
+		{
+			game.Start960();
 
-            board.DrawBoard(useDebug);
-            board.Move(this.logMoves);
+		}
 
-        }
 
-    }
+
+	}
+
+	public Game(Board b, bool useDebug, bool logMoves)
+	{
+		this.board = b;
+		this.useDebug = useDebug;
+		this.logMoves = logMoves;
+	}
+
+	public void Start()
+	{
+
+		while (!this.board.gameOver)
+		{
+
+			board.DrawBoard(useDebug);
+			board.Move(this.logMoves);
+
+		}
+
+	}
+
+	public void Start960()
+	{
+		while (!this.board.gameOver)
+		{
+			if (firstTurn)
+			{
+				board.Draw960Board(useDebug);
+				firstTurn = false;
+			}
+			else board.DrawBoard960AfterFirstTurn(useDebug);
+			board.Move960(this.logMoves);
+
+		}
+	}
 
 }

@@ -3,8 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|c:\\users\\apatrick\\projects\\chess\\consolechess\\source\\app\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|solutionrelative:source\\app\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|c:\\users\\apatrick\\projects\\chess\\consolechess\\source\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|solutionrelative:source\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C5070A-B9A4-4E5A-BC70-FEB361F48007}|..\\TestsForChess960\\TestsForChess960.csproj|c:\\users\\apatrick\\projects\\chess\\testsforchess960\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C5070A-B9A4-4E5A-BC70-FEB361F48007}|..\\TestsForChess960\\TestsForChess960.csproj|c:\\users\\apatrick\\projects\\chess\\testsforchess960\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|c:\\users\\apatrick\\projects\\chess\\consolechess\\source\\app\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|solutionrelative:source\\app\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|c:\\users\\apatrick\\projects\\chess\\consolechess\\source\\app\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|solutionrelative:source\\app\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|c:\\users\\apatrick\\projects\\chess\\consolechess\\source\\app\\graphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9645BED-6EFB-4AA7-AFCD-5B5C8BA63414}|ConsoleChess.csproj|solutionrelative:source\\app\\graphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +44,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Piece.cs",
+              "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Piece.cs",
+              "RelativeDocumentMoniker": "source\\app\\Piece.cs",
+              "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Piece.cs",
+              "RelativeToolTip": "source\\app\\Piece.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:35:31.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Graphics.cs",
+              "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Graphics.cs",
+              "RelativeDocumentMoniker": "source\\app\\Graphics.cs",
+              "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Graphics.cs",
+              "RelativeToolTip": "source\\app\\Graphics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:35:29.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Move.cs",
+              "RelativeDocumentMoniker": "source\\app\\Move.cs",
+              "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Move.cs",
+              "RelativeToolTip": "source\\app\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:35:27.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\TestsForChess960\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "..\\TestsForChess960\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\TestsForChess960\\MSTestSettings.cs",
+              "RelativeToolTip": "..\\TestsForChess960\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:31:35.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\Main.cs",
               "RelativeDocumentMoniker": "source\\Main.cs",
               "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\Main.cs",
               "RelativeToolTip": "source\\Main.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAgwHUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T00:08:44.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Board.cs",
+              "RelativeDocumentMoniker": "source\\app\\Board.cs",
+              "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\source\\app\\Board.cs",
+              "RelativeToolTip": "source\\app\\Board.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:10:12.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\apatrick\\Projects\\Chess\\TestsForChess960\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\TestsForChess960\\Test1.cs",
+              "ToolTip": "C:\\Users\\apatrick\\Projects\\Chess\\TestsForChess960\\Test1.cs",
+              "RelativeToolTip": "..\\TestsForChess960\\Test1.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv30AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:33:04.15Z",
               "EditorCaption": ""
             }
           ]
