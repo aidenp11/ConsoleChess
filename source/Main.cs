@@ -11,7 +11,7 @@ class Game {
     public static void Main(string[] args) {
 
         // TODO: Add support for multiple flags
-
+        bool start = true;
         bool useColor = false;
         bool shouldLog = false;
         bool useUnicode = true;

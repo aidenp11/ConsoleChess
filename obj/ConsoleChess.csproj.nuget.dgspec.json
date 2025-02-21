@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ConsoleChess/ConsoleChess.csproj": {}
+    "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\ConsoleChess.csproj": {}
   },
   "projects": {
-    "/workspaces/ConsoleChess/ConsoleChess.csproj": {
+    "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\ConsoleChess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ConsoleChess/ConsoleChess.csproj",
+        "projectUniqueName": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\ConsoleChess.csproj",
         "projectName": "ConsoleChess",
-        "projectPath": "/workspaces/ConsoleChess/ConsoleChess.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ConsoleChess/obj/",
+        "projectPath": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\ConsoleChess.csproj",
+        "packagesPath": "C:\\Users\\apatrick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\apatrick\\Projects\\Chess\\ConsoleChess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\apatrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\program files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,7 +39,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -53,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
